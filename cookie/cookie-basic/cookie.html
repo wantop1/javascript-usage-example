@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Cookie</title>
+    </head>
+    <body>
+        <section>
+            <div>
+                <label for="get-cookie">쿠키 확인하기</label>
+                <input onClick="getCookie();" id="get-cookie" type="button" value="get cookie">
+            </div>
+
+            <form id="cookie-form">
+                <label for="set-cookie">쿠키 생성하기</label>
+                <input type="text" name="cname" id="cname" placeholder="cookie name" required/>
+                <input type="text" name="cvalue" id="cvalue"  placeholder="cookie value" required/>
+                <input type="text" name="cexpire" id="cexpire" placeholder="cookie expiration" required/>
+                <button type="submit">set cookie</button>
+            </form>
+
+            <div>
+                <label for="delete-cookie">쿠키 삭제하기</label>
+                <input id="cookie-key" type="text" placeholder="cookie key"/>
+                <input onClick="deleteCookie();" id="delete-cookie" type="button" value="delete cookie">
+            </div>
+
+            <div>
+                <label for="delete-cookie">모든 쿠키 삭제하기</label>
+                <input onClick="deleteAllCookies();" id="delete-all-cookie" type="button" value="delete all cookie">
+            </div>
+        </section>
+        <script src="./cookie.js"></script>
+    </body>
+</html>

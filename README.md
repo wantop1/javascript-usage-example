@@ -2,3 +2,6 @@
 
 ## accordion
 - All open accordion
+
+## cookie
+- basic cookie
